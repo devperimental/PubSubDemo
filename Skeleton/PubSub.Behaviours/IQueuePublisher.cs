@@ -1,7 +1,9 @@
-﻿namespace PubSub.Behaviours
+﻿using System.Threading.Tasks;
+
+namespace PubSub.Behaviours
 {
     public interface IQueuePublisher<T>
     {
-        void SendMessage(T message);
+        Task SendMessage(T message);
     }
 }

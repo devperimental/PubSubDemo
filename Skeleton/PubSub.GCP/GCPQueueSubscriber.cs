@@ -2,7 +2,7 @@
 using CommonTypes.Settings;
 using PubSub.Behaviours;
 using System;
-using System.Threading;
+using System.Threading.Tasks;
 
 namespace PubSub.GCP
 {
@@ -17,7 +17,7 @@ namespace PubSub.GCP
             _gcpSettings = gcpSettings;
         }
 
-        public void Process(CancellationToken cancellationToken)
+        public Task Process()
         {
             throw new NotImplementedException();
         }

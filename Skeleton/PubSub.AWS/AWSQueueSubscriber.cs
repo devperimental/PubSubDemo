@@ -2,7 +2,7 @@
 using CommonTypes.Settings;
 using PubSub.Behaviours;
 using System;
-using System.Threading;
+using System.Threading.Tasks;
 
 namespace PubSub.AWS
 {
@@ -17,7 +17,7 @@ namespace PubSub.AWS
             _awsSettings = awsSettings;
         }
 
-        public void Process(CancellationToken cancellationToken)
+        public Task Process()
         {
             throw new NotImplementedException();
         }

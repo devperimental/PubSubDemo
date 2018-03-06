@@ -2,6 +2,7 @@
 using CommonTypes.Settings;
 using PubSub.Behaviours;
 using System;
+using System.Threading.Tasks;
 
 namespace PubSub.Azure
 {
@@ -16,7 +17,7 @@ namespace PubSub.Azure
             _azureSettings = azureSettings;
         }
 
-        public void SendMessage(T message)
+        public Task SendMessage(T message)
         {
             throw new NotImplementedException();
         }
